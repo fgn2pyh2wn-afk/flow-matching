@@ -6,6 +6,8 @@
 
 ---
 
+<img width="1189" height="350" alt="image" src="https://github.com/user-attachments/assets/950c7d54-2e45-411b-b83d-a46f63d638a4" />
+
 ## 1. 动机：为什么需要 Flow Matching
 
 扩散模型（DDPM）的思路是"先加噪、再去噪"，其反向过程是一条弯弯曲曲的路径，采样往往需要几百上千步。
