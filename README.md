@@ -14,7 +14,7 @@ Flow Matching 的思路是：**干脆直接定义一条从噪声 $x_1$ 到数据
 
 | | 扩散模型（DDPM） | Flow Matching |
 | --- | --- | --- |
-| 前向过程 | 随机加噪：$x_t=\sqrt{\bar\alpha_t}x_0+\sqrt{1-\bar\alpha_t}\epsilon$ | 确定性插值：$x_t=(1-t)x_0+t\,x_1$ |
+| 前向过程 | 随机加噪：$ x_t=\sqrt{\bar\alpha_t}x_0+\sqrt{1-\bar\alpha_t}\epsilon$ | 确定性插值：$ x_t=(1-t)x_0+t\,x_1$ |
 | 学习目标 | 预测噪声 $\epsilon$ | 预测速度 $v=x_1-x_0$ |
 | 生成方向 | 从 $t=T$ 到 $t=0$ 逐步"去噪" | 从 $t=1$ 到 $t=0$ 沿速度场"前进" |
 | 采样器 | DDIM / DDPM（反向 ODE / 随机链） | Euler 等 ODE 求解器 |
